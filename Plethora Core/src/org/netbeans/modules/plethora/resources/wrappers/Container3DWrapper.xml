@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Set PUBLIC '-//NetBeans//DTD LG3D Shape Properties Set 1.0//EN' 'nbfs://nbhost/SystemFileSystem/xml/entities/NetBeans/DTD_LG3D_Shape_Properties_Set_1_0'>
+
+<!--
+    Document   : Component3DWrapper.xml
+    Created on : November 21, 2006
+    Author     : Mohamed El-Geish
+    Description: Shape Property Set for Container3D
+-->
+
+<Set>
+    <Property
+        Name="KeyEventSource"
+        Type="boolean"
+        Getter="isKeyEventSource"
+        Setter="null"
+        DefaultValue="null"
+        DisplayName="Key Event Source"
+        Expert="true"
+        Preferred="false"
+        ShortDescription="Whether the container can generate mouse events"
+        PropertyEditorClass=""
+    />
+    <Property
+        Name="MouseEventEnabled"
+        Type="boolean"
+        Getter="isMouseEventEnabled"
+        Setter="setMouseEventEnabled"
+        DefaultValue="true"
+        DisplayName="Mouse Event Enabled"
+        Expert="true"
+        Preferred="false"
+        ShortDescription="Whether mouse events from this branch graph are enabled"
+        PropertyEditorClass=""
+    />
+    <Property
+        Name="MouseEventPropagatable"
+        Type="boolean"
+        Getter="isMouseEventPropagatable"
+        Setter="setMouseEventPropagatable"
+        DefaultValue="false"
+        DisplayName="Mouse Event Propagatable"
+        Expert="true"
+        Preferred="false"
+        ShortDescription="Whether mouse events originated from this object get propagated toward the components resides higher in the scene graph"
+        PropertyEditorClass=""
+    />
+    <Property
+        Name="Pickable"
+        Type="boolean"
+        Getter="getPickable"
+        Setter="null"
+        DefaultValue="null"
+        DisplayName="Pickable"
+        Expert="true"
+        Preferred="false"
+        ShortDescription="Indicates if the container should be pickable or not"
+        PropertyEditorClass=""
+    />
+    <Property
+        Name="PreferredSize"
+        Type="javax.vecmath.Vector3f"
+        Getter="getPreferredSize"
+        Setter="setPreferredSize"
+        DefaultValue="[0.0, 0.0, 0.0]"
+        DisplayName="Preferred Size"
+        Expert="false"
+        Preferred="false"
+        ShortDescription="Preferred size of the container the size is merely a hint for layout manger and no default action will be taken except storing the information"
+        PropertyEditorClass=""
+    />
+    <Property
+        Name="RotationAngle"
+        Type="float"
+        Getter="getRotationAngle"
+        Setter="setRotationAngle"
+        DefaultValue="0.0"
+        DisplayName="Rotation Angle"
+        Expert="false"
+        Preferred="true"
+        ShortDescription="Angle of rotation around the rotation axis in radians"
+        PropertyEditorClass="org.netbeans.modules.plethora.properties.AnglePropertyEditor"
+    />
+    <Property
+        Name="RotationAxis"
+        Type="javax.vecmath.Vector3f"
+        Getter="getRotationAxis"
+        Setter="setRotationAxis"
+        DefaultValue="[1.0, 0.0, 0.0]"
+        DisplayName="Rotation Axis"
+        Expert="false"
+        Preferred="true"
+        ShortDescription="Axis that is referenced in rotational actions"
+        PropertyEditorClass=""
+    />
+    <Property
+        Name="Scale"
+        Type="float"
+        Getter="getScale"
+        Setter="setScale"
+        DefaultValue="1.0"
+        DisplayName="Scale"
+        Expert="false"
+        Preferred="true"
+        ShortDescription="Scaling factor of the container"
+        PropertyEditorClass=""
+    />
+    <Property
+        Name="Translation"
+        Type="javax.vecmath.Vector3f"
+        Getter="getTranslation"
+        Setter="setTranslation"
+        DefaultValue="[0.0, 0.0, 0.0]"
+        DisplayName="Translation"
+        Expert="false"
+        Preferred="true"
+        ShortDescription="The center of location in the coordinate space of the container's parent"
+        PropertyEditorClass=""
+    />
+    <Property
+        Name="Transparency"
+        Type="float"
+        Getter="getTransparency"
+        Setter="setTransparency"
+        DefaultValue="0.0"
+        DisplayName="Transparency"
+        Expert="false"
+        Preferred="true"
+        ShortDescription="Transparency of the container"
+        PropertyEditorClass="org.netbeans.modules.plethora.properties.ZeroToOnePropertyEditor"
+    />
+    <Property
+        Name="Visible"
+        Type="boolean"
+        Getter="isVisible"
+        Setter="setVisible"
+        DefaultValue="false"
+        DisplayName="Visible"
+        Expert="false"
+        Preferred="true"
+        ShortDescription="Visiblity state of the component"
+        PropertyEditorClass=""
+    />
+    <Property
+        Name="NumChildren"
+        Type="int"
+        Getter="numChildren"
+        Setter="null"
+        DefaultValue="null"
+        DisplayName="Number of Children"
+        Expert="false"
+        Preferred="false"
+        ShortDescription="Count of the component's children"
+        PropertyEditorClass=""
+    />
+</Set>

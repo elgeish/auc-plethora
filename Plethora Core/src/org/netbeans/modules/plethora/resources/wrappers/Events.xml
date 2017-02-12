@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Set PUBLIC '-//NetBeans//DTD LG3D Shape Properties Set 1.0//EN' 'nbfs://nbhost/SystemFileSystem/xml/entities/NetBeans/DTD_LG3D_Shape_Properties_Set_1_0'>
+
+<!--
+    Document   : Events.xml
+    Created on : November 21, 2006
+    Author     : Mohamed El-Geish
+    Description: Event Handlers Names
+    
+    Names MUST correspond to these constants in the Component3DWrapper class
+    
+    private static final String EVENT_COMP_MANUAL_MOVE = "Component3DManualMove";
+    private static final String EVENT_COMP_MANUAL_RESIZE = "Component3DManualResize";
+    private static final String EVENT_COMP_PARKED = "Component3DParked";
+    private static final String EVENT_COMP_TO_BACK = "Component3DToBack";
+    private static final String EVENT_COMP_TO_FRONT = "Component3DToFront";
+    private static final String EVENT_COMP_VISUAL_APPEARANCE = "Component3DVisualAppearance";
+    private static final String EVENT_KEY_PRESSED = "KeyPressed";
+    private static final String EVENT_MOUSE_DRAGGED = "MouseDragged";
+    private static final String EVENT_MOUSE_ENTERED = "MouseEntered";
+    private static final String EVENT_MOUSE_MOTION = "MouseMotion";
+    private static final String EVENT_MOUSE_MOVED = "MouseMoved";
+    private static final String EVENT_MOUSE_PRESSED = "MousePressed";
+    private static final String EVENT_MOUSE_WHEEL = "MouseWheel";
+-->
+
+<Set>
+    <Property
+        Name="Component3DManualMove"
+        Type="java.lang.String"
+        Getter="getComponent3DManualMove"
+        Setter="setComponent3DManualMove"
+        DefaultValue=""
+        DisplayName="Component3D Manual Move"
+        Expert="false"
+        Preferred="true"
+        ShortDescription="Event handler for Component3D manual move event"
+        PropertyEditorClass="org.netbeans.modules.plethora.properties.EventPropertyEditor"
+    />
+    <Property
+        Name="Component3DManualResize"
+        Type="java.lang.String"
+        Getter="getComponent3DManualResize"
+        Setter="setComponent3DManualResize"
+        DefaultValue=""
+        DisplayName="Component3D Manual Resize"
+        Expert="false"
+        Preferred="true"
+        ShortDescription="Event handler for Component3D manual resize event"
+        PropertyEditorClass="org.netbeans.modules.plethora.properties.EventPropertyEditor"
+    />
+    <Property
+        Name="Component3DParked"
+        Type="java.lang.String"
+        Getter="getComponent3DParked"
+        Setter="setComponent3DParked"
+        DefaultValue=""
+        DisplayName="Component3D Parked"
+        Expert="false"
+        Preferred="true"
+        ShortDescription="Event handler for Component3D parked event"
+        PropertyEditorClass="org.netbeans.modules.plethora.properties.EventPropertyEditor"
+    />
+    <Property
+        Name="Component3DToBack"
+        Type="java.lang.String"
+        Getter="getComponent3DToBack"
+        Setter="setComponent3DToBack"
+        DefaultValue=""
+        DisplayName="Component3D To Back"
+        Expert="false"
+        Preferred="true"
+        ShortDescription="Event handler for Component3D to back event"
+        PropertyEditorClass="org.netbeans.modules.plethora.properties.EventPropertyEditor"
+    />
+    <Property
+        Name="Component3DToFront"
+        Type="java.lang.String"
+        Getter="getComponent3DToFront"
+        Setter="setComponent3DToFront"
+        DefaultValue=""
+        DisplayName="Component3D To Front"
+        Expert="false"
+        Preferred="true"
+        ShortDescription="Event handler for Component3D to front event"
+        PropertyEditorClass="org.netbeans.modules.plethora.properties.EventPropertyEditor"
+    />
+    <Property
+        Name="Component3DVisualAppearance"
+        Type="java.lang.String"
+        Getter="getComponent3DVisualAppearance"
+        Setter="setComponent3DVisualAppearance"
+        DefaultValue=""
+        DisplayName="Component3D Visual Appearance"
+        Expert="false"
+        Preferred="true"
+        ShortDescription="Event handler for Component3D visual appearance event"
+        PropertyEditorClass="org.netbeans.modules.plethora.properties.EventPropertyEditor"
+    />
+    <Property
+        Name="KeyPressed"
+        Type="java.lang.String"
+        Getter="getKeyPressed"
+        Setter="setKeyPressed"
+        DefaultValue=""
+        DisplayName="Key Pressed"
+        Expert="false"
+        Preferred="true"
+        ShortDescription="Event handler for key pressed and released events"
+        PropertyEditorClass="org.netbeans.modules.plethora.properties.EventPropertyEditor"
+    />
+    <Property
+        Name="MouseDragged"
+        Type="java.lang.String"
+        Getter="getMouseDragged"
+        Setter="setMouseDragged"
+        DefaultValue=""
+        DisplayName="Mouse Dragged"
+        Expert="false"
+        Preferred="true"
+        ShortDescription="Event handler for mouse dragged event"
+        PropertyEditorClass="org.netbeans.modules.plethora.properties.EventPropertyEditor"
+    />
+    <Property
+        Name="MouseEntered"
+        Type="java.lang.String"
+        Getter="getMouseEntered"
+        Setter="setMouseEntered"
+        DefaultValue=""
+        DisplayName="Mouse Entered"
+        Expert="false"
+        Preferred="true"
+        ShortDescription="Event handler for mouse entered event"
+        PropertyEditorClass="org.netbeans.modules.plethora.properties.EventPropertyEditor"
+    />
+    <Property
+        Name="MouseMotion"
+        Type="java.lang.String"
+        Getter="getMouseMotion"
+        Setter="setMouseMotion"
+        DefaultValue=""
+        DisplayName="Mouse Motion"
+        Expert="false"
+        Preferred="true"
+        ShortDescription="Event handler for mouse motion event"
+        PropertyEditorClass="org.netbeans.modules.plethora.properties.EventPropertyEditor"
+    />
+    <Property
+        Name="MouseMoved"
+        Type="java.lang.String"
+        Getter="getMouseMoved"
+        Setter="setMouseMoved"
+        DefaultValue=""
+        DisplayName="Mouse Moved"
+        Expert="false"
+        Preferred="true"
+        ShortDescription="Event handler for mouse moved event"
+        PropertyEditorClass="org.netbeans.modules.plethora.properties.EventPropertyEditor"
+    />
+    <Property
+        Name="MousePressed"
+        Type="java.lang.String"
+        Getter="getMousePressed"
+        Setter="setMousePressed"
+        DefaultValue=""
+        DisplayName="Mouse Pressed"
+        Expert="false"
+        Preferred="true"
+        ShortDescription="Event handler for mouse pressed event"
+        PropertyEditorClass="org.netbeans.modules.plethora.properties.EventPropertyEditor"
+    />
+    <Property
+        Name="MouseWheel"
+        Type="java.lang.String"
+        Getter="getMouseWheel"
+        Setter="setMouseWheel"
+        DefaultValue=""
+        DisplayName="Mouse Wheel"
+        Expert="false"
+        Preferred="true"
+        ShortDescription="Event handler for mouse wheel event"
+        PropertyEditorClass="org.netbeans.modules.plethora.properties.EventPropertyEditor"
+    />
+</Set>

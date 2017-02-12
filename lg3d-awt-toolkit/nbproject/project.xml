@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.apisupport.project</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/nb-module-project/2">
+            <code-name-base>org.jdesktop.lg3d.awt</code-name-base>
+            <suite-component/>
+            <module-dependencies/>
+            <public-packages>
+                <package>org.jdesktop.lg3d.awt</package>
+                <package>org.jdesktop.lg3d.wg.internal.swingnode</package>
+            </public-packages>
+            <class-path-extension>
+                <runtime-relative-path>ext/lg3d-awt-toolkit.jar</runtime-relative-path>
+                <binary-origin>release/modules/ext/lg3d-awt-toolkit.jar</binary-origin>
+            </class-path-extension>
+        </data>
+    </configuration>
+</project>

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+    Document   : lg3d-1_0.dtd
+    Created on : September 29, 2006
+    Author     : Mohamed El-Geish
+    Description: Document Type Definition for the Shape Properties Set files
+    
+    PUBLIC ID: -//NetBeans//DTD LG3D Shape Properties Set 1.0//EN
+    SYSTEM ID: nbfs://nbhost/SystemFileSystem/xml/entities/NetBeans/DTD_LG3D_Shape_Properties_Set_1_0
+-->
+
+<!ELEMENT Set (Property+)>
+
+<!ELEMENT Property (EMPTY)>
+<!ATTLIST Property
+    Name ID #REQUIRED
+    Type CDATA #REQUIRED
+    Getter CDATA #REQUIRED
+    Setter CDATA #REQUIRED
+    DefaultValue CDATA #REQUIRED
+    DisplayName CDATA #REQUIRED
+    Expert CDATA #REQUIRED
+    Preferred CDATA #REQUIRED
+    ShortDescription CDATA #REQUIRED
+    PropertyEditorClass CDATA #REQUIRED
+>

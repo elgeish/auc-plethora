@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Set PUBLIC '-//NetBeans//DTD LG3D Shape Properties Set 1.0//EN' 'nbfs://nbhost/SystemFileSystem/xml/entities/NetBeans/DTD_LG3D_Shape_Properties_Set_1_0'>
+
+<!--
+    Document   : SphereWrapper.xml
+    Created on : November 17, 2006
+    Author     : Mohamed El-Geish
+    Description: Shape Property Set for Sphere
+-->
+
+<Set>
+    <Property
+        Name="Radius"
+        Type="float"
+        Getter="getRadius"
+        Setter="setRadius"
+        DefaultValue="1.0"
+        DisplayName="Radius"
+        Expert="false"
+        Preferred="true"
+        ShortDescription="Radius of the sphere"
+        PropertyEditorClass=""
+    />
+    <Property
+        Name="PrimitiveFlags"
+        Type="int"
+        Getter="getPrimitiveFlags"
+        Setter="setPrimitiveFlags"
+        DefaultValue="1"
+        DisplayName="Primitive Flags"
+        Expert="false"
+        Preferred="true"
+        ShortDescription="The flags of primitive"
+        PropertyEditorClass=""
+    />
+    <Property
+        Name="Divisions"
+        Type="int"
+        Getter="getDivisions"
+        Setter="setDivisions"
+        DefaultValue="15"
+        DisplayName="Divisions"
+        Expert="false"
+        Preferred="true"
+        ShortDescription="Number of divisions"
+        PropertyEditorClass=""
+    />
+    <Property
+        Name="Appearance"
+        Type="edu.aucegypt.plethora.widgets.Appearance"
+        Getter="getAppearance0"
+        Setter="setAppearance0"
+        DefaultValue="null"
+        DisplayName="Appearance"
+        Expert="true"
+        Preferred="true"
+        ShortDescription="Appearance Color [red, green, blue, alpha]"
+        PropertyEditorClass="org.netbeans.modules.plethora.properties.AppearancePropertyEditor"
+    />
+</Set>

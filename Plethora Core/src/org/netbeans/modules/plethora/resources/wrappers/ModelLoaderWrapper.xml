@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Set PUBLIC '-//NetBeans//DTD LG3D Shape Properties Set 1.0//EN' 'nbfs://nbhost/SystemFileSystem/xml/entities/NetBeans/DTD_LG3D_Shape_Properties_Set_1_0'>
+
+<!--
+    Document   : ObjModelLoaderWrapper.xml
+    Created on : November 32, 2006
+    Author     : Mohamed El-Geish, and Moataz Nour
+    Description: Shape Property Set for ObjModelLoaderWrapper
+-->
+
+<Set>
+    <Property
+        Name="FilePath"
+        Type="java.lang.String"
+        Getter="getFilePath"
+        Setter="setFilePath"
+        DefaultValue="null"
+        DisplayName="File Path"
+        Expert="false"
+        Preferred="true"
+        ShortDescription="Model file path"
+        PropertyEditorClass="org.netbeans.modules.plethora.properties.ModelFilePropertyEditor"
+    />
+    <Property
+        Name="LoaderClass"
+        Type="java.lang.Class"
+        Getter="getLoaderClass"
+        Setter="null"
+        DefaultValue="null"
+        DisplayName="Loader Class"
+        Expert="true"
+        Preferred="false"
+        ShortDescription="Model loader class"
+        PropertyEditorClass=""
+    />
+</Set>

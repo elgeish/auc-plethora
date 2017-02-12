@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE library PUBLIC "-//NetBeans//DTD Library Declaration 1.0//EN" "http://www.netbeans.org/dtds/library-declaration-1_0.dtd">
+<library version="1.0">
+    <name>LG3D</name>
+    <type>j2se</type>
+    <localizing-bundle>org.netbeans.modules.plethora.resources.Bundle</localizing-bundle>
+    <volume>
+        <type>classpath</type>
+        <resource>jar:nbinst://org.netbeans.modules.plethora/libs/escher-0.2.2.lg.jar!/</resource>
+        <resource>jar:nbinst://org.netbeans.modules.plethora/libs/j3d-contrib-utils.jar!/</resource>
+        <resource>jar:nbinst://org.netbeans.modules.plethora/libs/lg3d-awt-toolkit.jar!/</resource>
+        <resource>jar:nbinst://org.netbeans.modules.plethora/libs/lg3d-core.jar!/</resource>
+        <resource>jar:nbinst://org.netbeans.modules.plethora/libs/nwn-0.7.jar!/</resource>
+        <resource>jar:nbinst://org.netbeans.modules.plethora/libs/odejava.jar!/</resource>
+        <resource>jar:nbinst://org.netbeans.modules.plethora/libs/satin-v2.3.jar!/</resource>
+    </volume>
+    <volume>
+        <type>src</type>
+    </volume>
+    <volume>
+        <type>javadoc</type>
+    </volume>
+</library>

@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+    Document   : lg3d-1_0.dtd
+    Created on : September 29, 2006
+    Author     : Mohamed El-Geish
+    Description: Document Type Definition for the LG3D XML files
+    
+    PUBLIC ID  : -//NetBeans//DTD LG3D Frame 1.0//EN
+    SYSTEM ID  : nbfs://nbhost/SystemFileSystem/xml/entities/NetBeans/DTD_LG3D_Frame_1_0
+-->
+
+<!---
+    The root node of the document.
+    Frame must contain a Properties element, a NonVisualElements element,
+    a Layout element, and a Components element in that order.
+    id is always fixed to "this" to maintain a reference to the generated class object which will make code generation
+    easier.
+-->
+
+<!ELEMENT Frame (Properties, NonVisualElements, Layout, Components)>
+<!ATTLIST Frame
+    id CDATA #FIXED "this"
+>
+
+<!---
+   The Properties element for the Frame;
+   it is divided into simple properties and complex properties.
+   The set method is used to set both types of properites in the generated code.
+-->
+
+<!ELEMENT Properties (SimpleProperty|ComplexProperty)*>
+
+<!--- 
+    The Simple Property does not require an object to be created first, and it can only take one value.
+    Example: foo.setHeight(10.4f); 
+-->
+
+<!ELEMENT SimpleProperty EMPTY>
+<!ATTLIST SimpleProperty
+    name CDATA #REQUIRED
+    type CDATA #REQUIRED
+    value CDATA #REQUIRED
+>
+
+<!---
+    The Complex Property requires an object to be created first with the listed parameters before using
+    the set method.
+    The name attribute is the name of the property to be set.
+    The type is the class type of the object to be created.
+-->
+
+<!ELEMENT ComplexProperty (Parameters)>
+<!ATTLIST ComplexProperty
+    name CDATA #REQUIRED
+    type CDATA #REQUIRED
+>
+
+<!--- 
+    Parameters element define a set of paramters to be sent to the constructor of an object.
+-->
+
+<!ELEMENT Parameters (SimpleParameter|ComplexParameter)*>
+
+<!--- 
+    SimpleParameter element encapsulates the value of the parameter passed to a constructor.
+-->
+
+<!ELEMENT SimpleParameter EMPTY>
+<!ATTLIST SimpleParameter
+    type CDATA #REQUIRED
+    value CDATA #REQUIRED
+>
+
+<!---
+    The Complex Parameter requires an object to be created first with the listed parameters before using
+    the constructor.
+    The name attribute is the name of the property to be set.
+    The type is the class type of the object to be created.
+-->
+
+<!ELEMENT ComplexParameter (Parameters)>
+<!ATTLIST ComplexParameter
+    type CDATA #REQUIRED
+>
+
+<!--- 
+   Non Visual Components are a set of elements that would represents components that are used by elements of the frame
+   but do not appear in the desginer such as appearance.
+-->
+
+<!ELEMENT NonVisualElements (Element)*>
+
+<!--- 
+    Element defines a class object that can be used either as a visual element in a component such as a sphere
+    or as a non-visual element such as appearance.
+    The value of the id attribute is unique and represents the element's variable name.
+    The type attribute defines the class type of the element.
+-->
+
+<!ELEMENT Element ((Parameters, Properties)|(Properties, Parameters))>
+<!ATTLIST Element
+    id ID #REQUIRED
+    type CDATA #REQUIRED
+>
+
+<!--- 
+  Layout describes the hierarchy of components and containers.
+-->
+
+<!ELEMENT Layout (ContainerRef|ComponentRef)*>
+
+<!--- 
+    ContainerRef represents a reference to a container and describes its layout.
+    A container can encompass an infinte depth of containers and components.
+    The ref attribute must reference an existing unique id attribute of a container.
+-->
+
+<!ELEMENT ContainerRef (ContainerRef|ComponentRef)*>
+<!ATTLIST ContainerRef
+    ref IDREF #REQUIRED
+>
+
+<!--- 
+    ComponentRef represents a reference to a component.
+    The ref attribute must reference an existing unique id attribute of a component.
+-->
+
+<!ELEMENT ComponentRef EMPTY>
+<!ATTLIST ComponentRef
+    ref IDREF #REQUIRED
+>
+
+<!--- 
+    Components represents a set of components and containers (Visual Components).
+-->
+
+<!ELEMENT Components (Container|Component)*>
+
+<!--- 
+    Container defines a Container3D object with its properties and event handlers.
+    The value of the id attribute is unique and represents the container's variable name.
+    The id attribute is referenced by ContainerRef's ref attribute in the Layout.
+    The type attribute defines the class type of the container.
+-->
+
+<!ELEMENT Container (Properties, EventHandlers)>
+<!ATTLIST Container
+    id ID #REQUIRED
+    type CDATA #REQUIRED
+>
+
+<!--- 
+    Component defines a Component3D object with its properties, event handlers, and element.
+    The value of the id attribute is unique and represents the component's variable name.
+    This id is referenced by ComponentRef's ref attribute.
+    The type attribute defines the class type of the component.
+-->
+
+<!ELEMENT Component (Properties, EventHandlers, Element)>
+<!ATTLIST Component
+    id ID #REQUIRED
+    type CDATA #REQUIRED
+>
+
+<!--- 
+   EventHandlers represents a group of event handlers that are defined on a component or a container.
+-->
+
+<!ELEMENT EventHandlers (EventHandler)*>
+
+<!--- 
+   EventHandler defines an event handler that handles an event on a component or a container.
+   The value of the event attribute represents the name of the target event class.
+   The value of the handler attribute represents the name of the function to which the event is propagated;
+   this value must be unique since it is a function name.
+-->
+
+<!ELEMENT EventHandler EMPTY>
+<!ATTLIST EventHandler
+    name CDATA #REQUIRED
+    event CDATA #REQUIRED
+    handler ID #REQUIRED
+>

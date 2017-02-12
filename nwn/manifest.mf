@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+OpenIDE-Module: net.sf.nwn.bif/0
+OpenIDE-Module-Localizing-Bundle: net/sf/nwn/bif/Bundle.properties
+OpenIDE-Module-Specification-Version: 0.7
+

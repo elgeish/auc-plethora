@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java class="java.beans.XMLDecoder" version="1.6.0">
+    <!-- Taskbar Item -->
+    <object class="org.jdesktop.lg3d.scenemanager.config.ApplicationDescription">
+        <void property="exec">
+            <string>java NewLg3dFrame</string>
+        </void>
+        <void property="iconFilename">
+            <string>plethora.png</string>
+        </void>
+        <void property="name">
+            <string>LG3D Project</string>
+        </void>
+    </object>
+    <!-- Start Menu Item -->
+    <object class="org.jdesktop.lg3d.scenemanager.utils.startmenu.StartMenuItemConfig">
+        <void property="command">
+            <string>java NewLg3dFrame</string>
+        </void>
+        <void property="displayResourceType">
+            <string>ICON</string>
+        </void>
+        <void property="displayResourceUrlName">
+            <string>resource:///plethora.png</string>
+        </void>
+        <void property="menuGroup">
+            <string>Main</string>
+        </void>
+        <void property="name">
+            <string>LG3D Project</string>
+        </void>
+        <void property="classpathJars">
+            <string>LG3D_Project.jar</string>
+        </void>
+    </object> 
+</java>

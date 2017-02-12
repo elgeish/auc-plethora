@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.5.0" class="java.beans.XMLDecoder">
+    <!-- Glassy Scene manager and Taskbar -->
+    <object class="org.jdesktop.lg3d.scenemanager.glassy.GlassySceneManagerConfig"/>
+    <object class="org.jdesktop.lg3d.scenemanager.utils.plugin.SceneManagerPluginConfig">
+        <void property="pluginClass">
+            <string>org.jdesktop.lg3d.scenemanager.utils.taskbar.GlassyTaskbar</string>
+        </void>
+        <void property="singletonPlugin">
+            <boolean>true</boolean>
+        </void>
+    </object>
+    <!-- Start menu -->
+    <object class="org.jdesktop.lg3d.scenemanager.utils.plugin.SceneManagerPluginConfig">
+        <void property="pluginClass">
+            <string>org.jdesktop.lg3d.scenemanager.utils.startmenu.StartMenu</string>
+        </void>
+        <void property="singletonPlugin">
+            <boolean>true</boolean>
+        </void>
+    </object>
+    <object class="org.jdesktop.lg3d.scenemanager.utils.startmenu.StartMenuConfig">
+        <void property="menuModelClass">
+            <string>org.jdesktop.lg3d.scenemanager.utils.startmenu.model.panel.PanelStartMenuModel</string>
+        </void>
+    </object>
+</java>

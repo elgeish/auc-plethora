@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.apisupport.project</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/nb-module-project/2">
+            <code-name-base>org.jdesktop.j3d.utils.math</code-name-base>
+            <suite-component/>
+            <module-dependencies/>
+            <public-packages>
+                <package>org.jdesktop.j3d.examples.axisbehavior</package>
+                <package>org.jdesktop.j3d.examples.boundsviewer</package>
+                <package>org.jdesktop.j3d.examples.transparency</package>
+                <package>org.jdesktop.j3d.loaders.wrappers</package>
+                <package>org.jdesktop.j3d.utils.behaviors.vp</package>
+                <package>org.jdesktop.j3d.utils.capability</package>
+                <package>org.jdesktop.j3d.utils.geometry</package>
+                <package>org.jdesktop.j3d.utils.math</package>
+                <package>org.jdesktop.j3d.utils.scenegraph.transparency</package>
+                <package>org.jdesktop.j3d.utils.scenegraph.traverser</package>
+                <package>org.jdesktop.j3d.utils.scenegraph.visualtools</package>
+            </public-packages>
+            <class-path-extension>
+                <runtime-relative-path>ext/j3d-contrib-utils.jar</runtime-relative-path>
+                <binary-origin>release/modules/ext/j3d-contrib-utils.jar</binary-origin>
+            </class-path-extension>
+        </data>
+    </configuration>
+</project>

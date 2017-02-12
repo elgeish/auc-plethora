@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.apisupport.project</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/nb-module-project/2">
+            <code-name-base>com.microcrowd.loader.java3d.max3ds</code-name-base>
+            <suite-component/>
+            <module-dependencies/>
+            <public-packages>
+                <package>com.microcrowd.loader.java3d.max3ds</package>
+                <package>com.microcrowd.loader.java3d.max3ds.chunks</package>
+                <package>com.microcrowd.loader.java3d.max3ds.data</package>
+                <package>com.realvue.sim.ui.loader.java3d.max3ds</package>
+            </public-packages>
+            <class-path-extension>
+                <runtime-relative-path>ext/Loader3DS1_2.jar</runtime-relative-path>
+                <binary-origin>release/modules/ext/Loader3DS1_2.jar</binary-origin>
+            </class-path-extension>
+        </data>
+    </configuration>
+</project>

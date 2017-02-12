@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+OpenIDE-Module: org.netbeans.modules.plethora.config
+OpenIDE-Module-Localizing-Bundle: org/netbeans/modules/plethora/config/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0
+

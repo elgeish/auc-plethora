@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE editor_palette_item PUBLIC '-//NetBeans//Editor Palette Item 1.0//EN' "http://www.netbeans.org/dtds/editor-palette-item-1_0.dtd">
+
+<!--
+    Document   : component-holder.xml
+    Created on : December 05, 2006
+    Author     : Mohamed El-Geish
+    Description: Palette item description for ComponentHolder
+-->
+
+<editor_palette_item version='1.0'>
+    <class name="org.netbeans.modules.plethora.peers.ComponentHolderPeer"/>
+    <icon16 urlvalue="org/netbeans/modules/plethora/resources/peers/component-holder.png" />
+    <icon32 urlvalue="org/netbeans/modules/plethora/resources/peers/component-holder32.png" />
+    <description localizing-bundle="org.netbeans.modules.plethora.resources.Bundle" display-name-key="NAME_ComponentHolder" tooltip-key="HINT_ComponentHolder" />
+</editor_palette_item>

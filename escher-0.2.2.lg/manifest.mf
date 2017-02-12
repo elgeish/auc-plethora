@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+OpenIDE-Module: gnu.app
+OpenIDE-Module-Localizing-Bundle: gnu/app/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0
+

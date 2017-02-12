@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Set PUBLIC '-//NetBeans//DTD LG3D Shape Properties Set 1.0//EN' 'nbfs://nbhost/SystemFileSystem/xml/entities/NetBeans/DTD_LG3D_Shape_Properties_Set_1_0'>
+
+<!--
+    Document   : Text2DWrapper.xml
+    Created on : December 04, 2006
+    Author     : Mohamed El-Geish
+    Description: Shape Property Set for Text2D
+-->
+
+<Set>
+    <Property
+        Name="String"
+        Type="java.lang.String"
+        Getter="getString"
+        Setter="setString"
+        DefaultValue="Text 2D"
+        DisplayName="String"
+        Expert="false"
+        Preferred="true"
+        ShortDescription="Text string"
+        PropertyEditorClass=""
+    />
+    <Property
+        Name="Color"
+        Type="javax.vecmath.Color3f"
+        Getter="getColor"
+        Setter="setColor"
+        DefaultValue="[1.0, 1.0, 1.0]"
+        DisplayName="Color"
+        Expert="false"
+        Preferred="true"
+        ShortDescription="Text color"
+        PropertyEditorClass="org.netbeans.modules.plethora.properties.Color3fPropertyEditor"
+    />
+    <Property
+        Name="Font"
+        Type="java.awt.Font"
+        Getter="getFont"
+        Setter="setFont"
+        DefaultValue="null"
+        DisplayName="Font"
+        Expert="false"
+        Preferred="true"
+        ShortDescription="Text font"
+        PropertyEditorClass=""
+    />
+</Set>

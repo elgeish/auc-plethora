@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Set PUBLIC '-//NetBeans//DTD LG3D Shape Properties Set 1.0//EN' 'nbfs://nbhost/SystemFileSystem/xml/entities/NetBeans/DTD_LG3D_Shape_Properties_Set_1_0'>
+
+<!--
+    Document   : ColorCubeWrapper.xml
+    Created on : November 17, 2006
+    Author     : Mohamed El-Geish
+    Description: Shape Property Set for Box
+-->
+
+<Set>
+    <Property
+        Name="Scale"
+        Type="double"
+        Getter="getScale"
+        Setter="setScale"
+        DefaultValue="1.0"
+        DisplayName="Scale"
+        Expert="false"
+        Preferred="true"
+        ShortDescription="Scale of the cube"
+        PropertyEditorClass=""
+    />
+</Set>

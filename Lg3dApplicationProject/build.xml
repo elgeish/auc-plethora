@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Lg3dApplicationProject" default="default" basedir=".">
+    <description>Builds, tests, and runs the project.</description>
+    <import file="nbproject/build-impl.xml"/>
+    <target name="-pre-jar">
+        <echo message="lgcfg:"/>
+        <exec executable="java">
+            <arg value="plethora.config.LGCFG"/>
+        </exec>
+        <copy todir="${build.classes.dir}">
+            <fileset dir="plethora" includes="*.lgcfg,*.png"/>
+        </copy>
+    </target>
+    <target name="-init-macrodef-java">
+        <property name="etc" location="${basedir}/plethora/etc"/>
+        <property name="appcodebase" location="${dist.dir}"/>
+        <property name="lib" location="${dist.dir}/lib"/>
+        <macrodef name="java" uri="http://www.netbeans.org/ns/j2se-project/1">
+            <element name="customize" optional="true"/>
+            <sequential>
+                <echo message="lg3d:"/>
+                <java fork="true" jar="${lib}/lg3d-core.jar">
+                    <jvmarg value="-client"/>
+                    <jvmarg value="-Xmx384m"/>
+                    <jvmarg value="-Xincgc"/>
+                    <jvmarg value="-Xms32m"/>
+                    <jvmarg value="-XX:MaxGCPauseMillis=20"/>
+                    <jvmarg value="-XX:CompileThreshold=500"/>
+                    <jvmarg value="-XX:+UseAdaptiveSizePolicy"/>
+                    <jvmarg value="-Dj3d.sortShape3DBounds=true"/>
+                    <jvmarg value="-Dlg.appcodebase=file:///${appcodebase}"/>
+                    <jvmarg value="-Dlg.etcdir=${etc}/"/>
+                    <jvmarg value="-Dlg.configurl=file:///${etc}/lg3d/lgconfig_1p_nox.xml"/>
+                    <jvmarg value="-Dlg.displayconfigurl=file:///${etc}/lg3d/displayconfig/j3d1x1"/>
+                    <jvmarg value="-Dlg.use3dtoolkit=true"/>
+                    <jvmarg value="-Dlg.maxfps=30"/>
+                    <classpath>
+                        <fileset dir="${lib}" includes="*.jar"/>
+                    </classpath>
+                </java>
+            </sequential>
+        </macrodef>
+    </target>
+    <target name="run-single">
+        <echo message="Please select a main class then run the LG3D project."/>
+    </target>
+    <target name="debug-single">
+        <echo message="Please select a main class then run the LG3D project."/>
+    </target>
+    <target name="test-single">
+        <echo message="Please select a main class then run the LG3D project."/>
+    </target>
+</project>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.apisupport.project</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/nb-module-project/2">
+            <code-name-base>gnu.app</code-name-base>
+            <suite-component/>
+            <module-dependencies/>
+            <public-packages>
+                <package>gnu.app</package>
+                <package>gnu.app.displayhack</package>
+                <package>gnu.app.displayhack.eraser</package>
+                <package>gnu.app.glxdemo</package>
+                <package>gnu.app.puppet</package>
+                <package>gnu.app.redbook</package>
+                <package>gnu.util</package>
+                <package>gnu.x11</package>
+                <package>gnu.x11.event</package>
+                <package>gnu.x11.extension</package>
+                <package>gnu.x11.extension.glx</package>
+                <package>gnu.x11.extension.render</package>
+                <package>gnu.x11.image</package>
+                <package>gnu.x11.keysym</package>
+                <package>gnu.x11.test</package>
+                <package>gnu.x11.tk</package>
+            </public-packages>
+            <class-path-extension>
+                <runtime-relative-path>ext/escher-0.2.2.lg.jar</runtime-relative-path>
+                <binary-origin>release/modules/ext/escher-0.2.2.lg.jar</binary-origin>
+            </class-path-extension>
+        </data>
+    </configuration>
+</project>

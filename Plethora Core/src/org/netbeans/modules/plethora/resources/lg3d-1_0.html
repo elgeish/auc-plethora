@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<title>DTD Grammar Documentation</title>
+<meta http-equiv="Content-Type" content="text/xhtml; charset=UTF-8" />
+</head>
+
+<!-- Generated on Nov 10, 2006 by NetBeans XML module. -->
+<body>
+
+<hr />
+<h2>Element Index</h2>
+<ul><li><tt><a href="#ComplexProperty">ComplexProperty</a></tt></li>
+<li><tt><a href="#Component">Component</a></tt></li>
+<li><tt><a href="#ComponentRef">ComponentRef</a></tt></li>
+<li><tt><a href="#Components">Components</a></tt></li>
+<li><tt><a href="#Container">Container</a></tt></li>
+<li><tt><a href="#ContainerRef">ContainerRef</a></tt></li>
+<li><tt><a href="#Element">Element</a></tt></li>
+<li><tt><a href="#EventHandler">EventHandler</a></tt></li>
+<li><tt><a href="#EventHandlers">EventHandlers</a></tt></li>
+<li><tt><a href="#Frame">Frame</a></tt></li>
+<li><tt><a href="#Layout">Layout</a></tt></li>
+<li><tt><a href="#NonVisualElements">NonVisualElements</a></tt></li>
+<li><tt><a href="#Parameter">Parameter</a></tt></li>
+<li><tt><a href="#Parameters">Parameters</a></tt></li>
+<li><tt><a href="#Properties">Properties</a></tt></li>
+<li><tt><a href="#SimpleProperty">SimpleProperty</a></tt></li>
+</ul>
+
+<hr />
+<h2>Element Details</h2>
+
+
+<hr />
+<h2><a name="Frame"></a>Frame</h2>
+<div>The root node of the document.
+    Frame must contain a Properties element, a NonVisualElements element,
+    a Layout element, and a Components element in that order.
+    id is always fixed to "this" to maintain a reference to the generated class object which will make code generation
+    easier.</div>
+<p><b>Declared Attributes</b></p>
+<ul><li><tt>#FIXED CDATA id = this</tt></li>
+</ul>
+<p><b>Element Content Model</b></p>
+<p><tt>(<a href="#Properties">Properties</a>, <a href="#NonVisualElements">NonVisualElements</a>, <a href="#Layout">Layout</a>, <a href="#Components">Components</a>)</tt></p>
+<p><b>Referenced by</b></p>
+<p><tt></tt></p>
+
+
+<hr />
+<h2><a name="Properties"></a>Properties</h2>
+<div>The Properties element for the Frame;
+   it is divided into simple properties and complex properties.
+   The set method is used to set both types of properites in the generated code.</div>
+<p><b>Element Content Model</b></p>
+<p><tt>(<a href="#SimpleProperty">SimpleProperty</a>&nbsp;| <a href="#ComplexProperty">ComplexProperty</a>)*</tt></p>
+<p><b>Referenced by</b></p>
+<p><tt><a href="#Frame">Frame</a>, <a href="#Element">Element</a>, <a href="#Container">Container</a>, <a href="#Component">Component</a></tt></p>
+
+
+<hr />
+<h2><a name="SimpleProperty"></a>SimpleProperty</h2>
+<div>The Simple Property does not require an object to be created first, and it can only take one value.
+    Example: foo.setHeight(10.4f);</div>
+<p><b>Declared Attributes</b></p>
+<ul><li><tt>#REQUIRED CDATA name</tt></li>
+<li><tt>#REQUIRED CDATA type</tt></li>
+<li><tt>#REQUIRED CDATA value</tt></li>
+</ul>
+<p><b>Element Content Model</b></p>
+<p><tt>EMPTY</tt></p>
+<p><b>Referenced by</b></p>
+<p><tt><a href="#Properties">Properties</a></tt></p>
+
+
+<hr />
+<h2><a name="ComplexProperty"></a>ComplexProperty</h2>
+<div>The Complex property requires an object to be created first with the listed parameters before using
+    the set method.
+    The name attribute is the name of the property to be set.
+    The type is the class type of the object to be created.</div>
+<p><b>Declared Attributes</b></p>
+<ul><li><tt>#REQUIRED CDATA name</tt></li>
+<li><tt>#REQUIRED CDATA type</tt></li>
+</ul>
+<p><b>Element Content Model</b></p>
+<p><tt>(<a href="#Parameters">Parameters</a>)</tt></p>
+<p><b>Referenced by</b></p>
+<p><tt><a href="#Properties">Properties</a></tt></p>
+
+
+<hr />
+<h2><a name="Parameters"></a>Parameters</h2>
+<div>Parameters element define a set of paramters to be sent to the constructor of an object.</div>
+<p><b>Element Content Model</b></p>
+<p><tt>(<a href="#Parameter">Parameter</a>)*</tt></p>
+<p><b>Referenced by</b></p>
+<p><tt><a href="#ComplexProperty">ComplexProperty</a>, <a href="#Element">Element</a></tt></p>
+
+
+<hr />
+<h2><a name="Parameter"></a>Parameter</h2>
+<div>Parameter element encapsulates the value of the parameter passed to a constructor.</div>
+<p><b>Declared Attributes</b></p>
+<ul><li><tt>#REQUIRED CDATA type</tt></li>
+<li><tt>#REQUIRED CDATA value</tt></li>
+</ul>
+<p><b>Element Content Model</b></p>
+<p><tt>EMPTY</tt></p>
+<p><b>Referenced by</b></p>
+<p><tt><a href="#Parameters">Parameters</a></tt></p>
+
+
+<hr />
+<h2><a name="NonVisualElements"></a>NonVisualElements</h2>
+<div>Non Visual Components are a set of elements that would represents components that are used by elements of the frame
+   but do not appear in the desginer such as appearance.</div>
+<p><b>Element Content Model</b></p>
+<p><tt>(<a href="#Element">Element</a>)*</tt></p>
+<p><b>Referenced by</b></p>
+<p><tt><a href="#Frame">Frame</a></tt></p>
+
+
+<hr />
+<h2><a name="Element"></a>Element</h2>
+<div>Element defines a class object that can be used either as a visual element in a component such as a sphere
+    or as a non-visual element such as appearance.
+    The value of the id attribute is unique and represents the element's variable name.
+    The type attribute defines the class type of the element.</div>
+<p><b>Declared Attributes</b></p>
+<ul><li><tt>#REQUIRED ID id</tt></li>
+<li><tt>#REQUIRED CDATA type</tt></li>
+</ul>
+<p><b>Element Content Model</b></p>
+<p><tt>(<a href="#Parameters">Parameters</a>, <a href="#Properties">Properties</a>)</tt></p>
+<p><b>Referenced by</b></p>
+<p><tt><a href="#NonVisualElements">NonVisualElements</a>, <a href="#Component">Component</a></tt></p>
+
+
+<hr />
+<h2><a name="Layout"></a>Layout</h2>
+<div>Layout describes the hierarchy of components and containers.</div>
+<p><b>Element Content Model</b></p>
+<p><tt>(<a href="#ContainerRef">ContainerRef</a>&nbsp;| <a href="#ComponentRef">ComponentRef</a>)*</tt></p>
+<p><b>Referenced by</b></p>
+<p><tt><a href="#Frame">Frame</a></tt></p>
+
+
+<hr />
+<h2><a name="ContainerRef"></a>ContainerRef</h2>
+<div>ContainerRef represents a reference to a container and describes its layout.
+    A container can encompass an infinte depth of containers and components.
+    The ref attribute must reference an existing unique id attribute of a container.</div>
+<p><b>Declared Attributes</b></p>
+<ul><li><tt>#REQUIRED IDREF ref</tt></li>
+</ul>
+<p><b>Element Content Model</b></p>
+<p><tt>(<a href="#ContainerRef">ContainerRef</a>&nbsp;| <a href="#ComponentRef">ComponentRef</a>)</tt></p>
+<p><b>Referenced by</b></p>
+<p><tt><a href="#Layout">Layout</a>, <a href="#ContainerRef">ContainerRef</a></tt></p>
+
+
+<hr />
+<h2><a name="ComponentRef"></a>ComponentRef</h2>
+<div>ComponentRef represents a reference to a component.
+    The ref attribute must reference an existing unique id attribute of a component.</div>
+<p><b>Declared Attributes</b></p>
+<ul><li><tt>#REQUIRED IDREF ref</tt></li>
+</ul>
+<p><b>Element Content Model</b></p>
+<p><tt>EMPTY</tt></p>
+<p><b>Referenced by</b></p>
+<p><tt><a href="#Layout">Layout</a>, <a href="#ContainerRef">ContainerRef</a></tt></p>
+
+
+<hr />
+<h2><a name="Components"></a>Components</h2>
+<div>Components represents a set of components and containers (Visual Components).</div>
+<p><b>Element Content Model</b></p>
+<p><tt>(<a href="#Container">Container</a>&nbsp;| <a href="#Component">Component</a>)*</tt></p>
+<p><b>Referenced by</b></p>
+<p><tt><a href="#Frame">Frame</a></tt></p>
+
+
+<hr />
+<h2><a name="Container"></a>Container</h2>
+<div>Container defines a Container3D object with its properties and event handlers.
+    The value of the id attribute is unique and represents the container's variable name.
+    The id attribute is referenced by ContainerRef's ref attribute in the Layout.</div>
+<p><b>Declared Attributes</b></p>
+<ul><li><tt>#REQUIRED ID id</tt></li>
+</ul>
+<p><b>Element Content Model</b></p>
+<p><tt>(<a href="#Properties">Properties</a>, <a href="#EventHandlers">EventHandlers</a>)</tt></p>
+<p><b>Referenced by</b></p>
+<p><tt><a href="#Components">Components</a></tt></p>
+
+
+<hr />
+<h2><a name="Component"></a>Component</h2>
+<div>Component defines a Component3D object with its properties, event handlers, and element.
+    The value of the id attribute is unique and represents the component's variable name.
+    This id is referenced by ComponentRef's ref attribute.</div>
+<p><b>Declared Attributes</b></p>
+<ul><li><tt>#REQUIRED ID id</tt></li>
+</ul>
+<p><b>Element Content Model</b></p>
+<p><tt>(<a href="#Properties">Properties</a>, <a href="#EventHandlers">EventHandlers</a>, <a href="#Element">Element</a>)</tt></p>
+<p><b>Referenced by</b></p>
+<p><tt><a href="#Components">Components</a></tt></p>
+
+
+<hr />
+<h2><a name="EventHandlers"></a>EventHandlers</h2>
+<div>EventHandlers represents a group of event handlers that are defined on a component or a container.</div>
+<p><b>Element Content Model</b></p>
+<p><tt>(<a href="#EventHandler">EventHandler</a>)*</tt></p>
+<p><b>Referenced by</b></p>
+<p><tt><a href="#Container">Container</a>, <a href="#Component">Component</a></tt></p>
+
+
+<hr />
+<h2><a name="EventHandler"></a>EventHandler</h2>
+<div>EventHandler defines an event handler that handles an event on a component or a container.
+   The value of the event attribute represents the name of the event which is the name of the overriden function in 
+   the inner annonymous class.
+   The value of the listener attribute represents the interface to be implemented or the abstract class to be extended 
+   by the inner annonymous class.
+   The value of the parameter attribute represents the class type of the passed parameter.
+   The value of the handler attribute represents the name of the function to which the event is propagated;
+   this value must be unique since it is a function name.</div>
+<p><b>Declared Attributes</b></p>
+<ul><li><tt>#REQUIRED CDATA event</tt></li>
+<li><tt>#REQUIRED CDATA listener</tt></li>
+<li><tt>#REQUIRED CDATA parameter</tt></li>
+<li><tt>#REQUIRED ID handler</tt></li>
+</ul>
+<p><b>Element Content Model</b></p>
+<p><tt>EMPTY</tt></p>
+<p><b>Referenced by</b></p>
+<p><tt><a href="#EventHandlers">EventHandlers</a></tt></p>
+</body></html>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Set PUBLIC '-//NetBeans//DTD LG3D Shape Properties Set 1.0//EN' 'nbfs://nbhost/SystemFileSystem/xml/entities/NetBeans/DTD_LG3D_Shape_Properties_Set_1_0'>
+
+<!--
+    Document   : ButtonWrapper.xml
+    Created on : December 04, 2006
+    Author     : Mohamed El-Geish
+    Description: Shape Property Set for Button
+-->
+
+<Set>
+    <Property
+        Name="Text"
+        Type="java.lang.String"
+        Getter="getText"
+        Setter="setText"
+        DefaultValue="Menu Item"
+        DisplayName="Text"
+        Expert="false"
+        Preferred="true"
+        ShortDescription="Text"
+        PropertyEditorClass=""
+    />
+</Set>

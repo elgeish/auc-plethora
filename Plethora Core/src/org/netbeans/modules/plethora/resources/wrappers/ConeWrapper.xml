@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Set PUBLIC '-//NetBeans//DTD LG3D Shape Properties Set 1.0//EN' 'nbfs://nbhost/SystemFileSystem/xml/entities/NetBeans/DTD_LG3D_Shape_Properties_Set_1_0'>
+
+<!--
+    Document   : ConeWrapper.xml
+    Created on : November 17, 2006
+    Author     : Mohamed El-Geish
+    Description: Shape Property Set for Box
+-->
+
+<Set>
+    <Property
+        Name="Radius"
+        Type="float"
+        Getter="getRadius"
+        Setter="setRadius"
+        DefaultValue="1.0"
+        DisplayName="Radius"
+        Expert="false"
+        Preferred="true"
+        ShortDescription="Radius of the cone's base"
+        PropertyEditorClass=""
+    />
+    <Property
+        Name="Height"
+        Type="float"
+        Getter="getHeight"
+        Setter="setHeight"
+        DefaultValue="2.0"
+        DisplayName="Height"
+        Expert="false"
+        Preferred="true"
+        ShortDescription="Height of the cone"
+        PropertyEditorClass=""
+    />
+    <Property
+        Name="PrimitiveFlags"
+        Type="int"
+        Getter="getPrimitiveFlags"
+        Setter="setPrimitiveFlags"
+        DefaultValue="1"
+        DisplayName="Primitive Flags"
+        Expert="false"
+        Preferred="true"
+        ShortDescription="The flags of primitive"
+        PropertyEditorClass=""
+    />
+    <Property
+        Name="Xdivisions"
+        Type="int"
+        Getter="getXdivisions"
+        Setter="setXdivisions"
+        DefaultValue="15"
+        DisplayName="X Divisions"
+        Expert="false"
+        Preferred="true"
+        ShortDescription="Number of X divisions"
+        PropertyEditorClass=""
+    />
+    <Property
+        Name="Ydivisions"
+        Type="int"
+        Getter="getYdivisions"
+        Setter="setYdivisions"
+        DefaultValue="1"
+        DisplayName="Y Divisions"
+        Expert="false"
+        Preferred="true"
+        ShortDescription="Number of Y divisions"
+        PropertyEditorClass=""
+    />
+    <Property
+        Name="Appearance"
+        Type="edu.aucegypt.plethora.widgets.Appearance"
+        Getter="getAppearance0"
+        Setter="setAppearance0"
+        DefaultValue="null"
+        DisplayName="Appearance"
+        Expert="true"
+        Preferred="true"
+        ShortDescription="Appearance Color [red, green, blue, alpha]"
+        PropertyEditorClass="org.netbeans.modules.plethora.properties.AppearancePropertyEditor"
+    />
+</Set>

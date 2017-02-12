@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+    Document   : lg3d-1_0.dtd
+    Created on : September 29, 2006
+    Author     : Mohamed El-Geish
+    Description: Document Type Definition for the LGCFG files
+    
+    PUBLIC ID: -//NetBeans//DTD LG3D Application Configuration 1.6//EN
+    SYSTEM ID: nbfs://nbhost/SystemFileSystem/xml/entities/NetBeans/DTD_LG3D_Application_Configuration_1_6
+-->
+
+<!---
+    java is the root element of the configuration file.
+    The value of the class attribute is the qualified class name of the XML Decoder
+    The value of the version attribute is the JDK version being used.
+-->
+
+<!ELEMENT java (object+)>
+<!ATTLIST java
+  class CDATA #FIXED "java.beans.XMLDecoder"
+  version CDATA #FIXED "1.6.0"
+>
+
+<!---
+    object represents the meta-data of the object to be de-serialized by the XML decoder
+    The value of the class attribute is the qualified class name of the object to be de-serialized.
+    The value of the class attribute must be one of the following:
+        org.jdesktop.lg3d.scenemanager.config.ApplicationDescription (Taskbar Item)
+        org.jdesktop.lg3d.scenemanager.utils.startmenu.StartMenuItemConfig (Start Menu Item)
+-->
+
+<!ELEMENT object (void+)>
+<!ATTLIST object
+    class (org.jdesktop.lg3d.scenemanager.config.ApplicationDescription|org.jdesktop.lg3d.scenemanager.utils.startmenu.StartMenuItemConfig) #REQUIRED
+>
+
+<!---
+    void holds the name of the property of the object to be de-serialized by the XML decoder
+    The value of the property attribute is the name of the object's property.
+    The value of the property attribute must be one of the following:
+        classpathJars (the JARs of the application e.g. App1.jar)
+        command (the command to be executed to run the application e.g. java App1)
+        displayResourceType (the type of the display resource e.g. ICON)
+        displayResourceUrlName (the URL of the display resource e.g. resource:///app1.png)
+        exec (main class for application)
+        iconFilename (path to icon image file)
+        menuGroup (the group to which the application shortcut belongs)
+        name (application name)
+-->
+
+<!ELEMENT void (string)>
+<!ATTLIST void
+    property (classpathJars|command|displayResourceType|displayResourceUrlName|exec|iconFilename|menuGroup|name) #REQUIRED
+>
+
+<!---
+    string holds the value of the property of the object to be de-serialized by the XML decoder
+-->
+
+<!ELEMENT string (#PCDATA)>

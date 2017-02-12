@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.apisupport.project</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/nb-module-project/2">
+            <code-name-base>net.sf.nwn.bif</code-name-base>
+            <suite-component/>
+            <module-dependencies/>
+            <public-packages>
+                <package>com.sun.j3d.demos.utils.scenegraph.traverser</package>
+                <package>net.sf.nwn.bif</package>
+                <package>net.sf.nwn.j3dedit</package>
+                <package>net.sf.nwn.j3dfly</package>
+                <package>net.sf.nwn.loader</package>
+                <package>net.sf.nwn.viewer</package>
+            </public-packages>
+            <class-path-extension>
+                <runtime-relative-path>ext/nwn-0.7.jar</runtime-relative-path>
+                <binary-origin>release/modules/ext/nwn-0.7.jar</binary-origin>
+            </class-path-extension>
+        </data>
+    </configuration>
+</project>

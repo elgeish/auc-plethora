@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+OpenIDE-Module: org.jdesktop.j3d.utils.math
+OpenIDE-Module-Localizing-Bundle: org/jdesktop/j3d/utils/math/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0
+

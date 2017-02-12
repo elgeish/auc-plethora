@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+OpenIDE-Module: org.netbeans.modules.plethora
+OpenIDE-Module-Install: org/netbeans/modules/plethora/utils/Installer.class
+OpenIDE-Module-Layer: org/netbeans/modules/plethora/resources/layer.xml
+OpenIDE-Module-Localizing-Bundle: org/netbeans/modules/plethora/resources/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0
+
+Name: org/netbeans/modules/plethora/lg3d/Lg3dDataLoader.class
+Install-Before: org.netbeans.modules.java.JavaDataObject
+OpenIDE-Module-Class: Loader
+
+Name: org/netbeans/modules/plethora/lgcfg/LgcfgDataLoader.class
+OpenIDE-Module-Class: Loader

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.JFileChooser" name="fileChooser">
+      <Properties>
+        <Property name="acceptAllFileFilterUsed" type="boolean" value="false"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fileChooserActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="fileChooser.addChoosableFileFilter(new FileNameExtensionFilter(&quot;3D Studio Files (*.3ds)&quot;, _3DS));&#xa;fileChooser.addChoosableFileFilter(new FileNameExtensionFilter(&quot;Lightwave Files (*.lw|*.lwo|*.lws)&quot;, LW, LWO, LWS));&#xa;fileChooser.addChoosableFileFilter(new FileNameExtensionFilter(&quot;Object Files (*.obj)&quot;, OBJ));&#xa;fileChooser.addChoosableFileFilter(new FileNameExtensionFilter(&quot;All Supported Files (*.3ds|*.lw|*.lwo|*.lws|*.obj)&quot;, _3DS, LW, LWO, LWS, OBJ));"/>
+      </AuxValues>
+    </Component>
+  </NonVisualComponents>
+  <AuxValues>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="fileLabel" min="-2" pref="457" max="-2" attributes="0"/>
+              <EmptySpace pref="26" max="32767" attributes="0"/>
+              <Component id="browseButton" min="-2" pref="78" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="fileLabel" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
+                  <Component id="browseButton" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="fileLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="File"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="browseButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Browse"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="browseButtonActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Set PUBLIC '-//NetBeans//DTD LG3D Shape Properties Set 1.0//EN' 'nbfs://nbhost/SystemFileSystem/xml/entities/NetBeans/DTD_LG3D_Shape_Properties_Set_1_0'>
+
+<!--
+    Document   : BoxWrapper.xml
+    Created on : November 17, 2006
+    Author     : Mohamed El-Geish
+    Description: Shape Property Set for Box
+-->
+
+<Set>
+    <Property
+        Name="Xdimension"
+        Type="float"
+        Getter="getXdimension"
+        Setter="setXdimension"
+        DefaultValue="1.0"
+        DisplayName="X Dimension"
+        Expert="false"
+        Preferred="true"
+        ShortDescription="X-dimension size of the box"
+        PropertyEditorClass=""
+    />
+    <Property
+        Name="Ydimension"
+        Type="float"
+        Getter="getYdimension"
+        Setter="setYdimension"
+        DefaultValue="1.0"
+        DisplayName="Y Dimension"
+        Expert="false"
+        Preferred="true"
+        ShortDescription="Y-dimension size of the box"
+        PropertyEditorClass=""
+    />
+    <Property
+        Name="Zdimension"
+        Type="float"
+        Getter="getZdimension"
+        Setter="setZdimension"
+        DefaultValue="1.0"
+        DisplayName="Z Dimension"
+        Expert="false"
+        Preferred="true"
+        ShortDescription="Z-dimension size of the box"
+        PropertyEditorClass=""
+    />
+    <Property
+        Name="Appearance"
+        Type="edu.aucegypt.plethora.widgets.Appearance"
+        Getter="getAppearance0"
+        Setter="setAppearance0"
+        DefaultValue="null"
+        DisplayName="Appearance"
+        Expert="true"
+        Preferred="true"
+        ShortDescription="Appearance Color [red, green, blue, alpha]"
+        PropertyEditorClass="org.netbeans.modules.plethora.properties.AppearancePropertyEditor"
+    />
+</Set>

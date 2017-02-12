@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE preferences SYSTEM "http://java.sun.com/dtd/preferences.dtd">
+<preferences EXTERNAL_XML_VERSION="1.0">
+    <root type="user">
+        <map/>
+        <node name="org">
+            <map/>
+            <node name="jdesktop">
+                <map/>
+                <node name="lg3d">
+                    <map/>
+                    <node name="scenemanager">
+                        <map />
+                        <node name="plugins">
+                            <map />
+                        </node>
+                        <node name="cursors">
+                            <map />
+                        </node>
+                        <node name="utils">
+                            <map/>
+                            <node name="startmenu">
+                                <map />
+                            </node>
+                        </node>
+                    </node>
+                    <node name="displayserver">
+                        <map/>
+                        <node name="nativewindow">
+                            <map/>
+                            <node name="x11">
+                                <map/>
+                                <node name="win-assoc">
+                                    <map/>
+                                </node>
+                            </node>
+                        </node>
+                    </node>
+                </node>
+            </node>
+        </node>
+    </root>
+</preferences>

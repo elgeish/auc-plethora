@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<title>DTD Grammar Documentation</title>
+<meta http-equiv="Content-Type" content="text/xhtml; charset=UTF-8" />
+</head>
+
+<!-- Generated on Oct 16, 2006 by NetBeans XML module. -->
+<body>
+
+<hr />
+<h2>Element Index</h2>
+<ul><li><tt><a href="#java">java</a></tt></li>
+<li><tt><a href="#object">object</a></tt></li>
+<li><tt><a href="#string">string</a></tt></li>
+<li><tt><a href="#void">void</a></tt></li>
+</ul>
+
+<hr />
+<h2>Element Details</h2>
+
+
+<hr />
+<h2><a name="java"></a>java</h2>
+<div>java is the root element of the configuration file.
+    The value of the class attribute is the qualified class name of the XML Decoder
+    The value of the version attribute is the JDK version being used.</div>
+<p><b>Declared Attributes</b></p>
+<ul><li><tt>#FIXED CDATA class = java.beans.XMLDecoder</tt></li>
+<li><tt>#FIXED CDATA version = 1.6.0</tt></li>
+</ul>
+<p><b>Element Content Model</b></p>
+<p><tt>(<a href="#object">object</a>+)</tt></p>
+<p><b>Referenced by</b></p>
+<p><tt></tt></p>
+
+
+<hr />
+<h2><a name="object"></a>object</h2>
+<div>object represents the meta-data of the object to be de-serialized by the XML decoder
+    The value of the class attribute is the qualified class name of the object to be de-serialized.
+    The value of the class attribute must be one of the following:
+        org.jdesktop.lg3d.scenemanager.config.ApplicationDescription (Taskbar Item)
+        org.jdesktop.lg3d.scenemanager.utils.startmenu.StartMenuItemConfig (Start Menu Item)</div>
+<p><b>Declared Attributes</b></p>
+<ul><li><tt>#REQUIRED ENUMERATION ( org.jdesktop.lg3d.scenemanager.config.ApplicationDescription | org.jdesktop.lg3d.scenemanager.utils.startmenu.StartMenuItemConfig ) class</tt></li>
+</ul>
+<p><b>Element Content Model</b></p>
+<p><tt>(<a href="#void">void</a>+)</tt></p>
+<p><b>Referenced by</b></p>
+<p><tt><a href="#java">java</a></tt></p>
+
+
+<hr />
+<h2><a name="void"></a>void</h2>
+<div>void holds the name of the property of the object to be de-serialized by the XML decoder
+    The value of the property attribute is the name of the object's property.
+    The value of the property attribute must be one of the following:
+        classpathJars (the JARs of the application e.g. App1.jar)
+        command (the command to be executed to run the application e.g. java App1)
+        displayResourceType (the type of the display resource e.g. ICON)
+        displayResourceUrlName (the URL of the display resource e.g. resource:///app1.png)
+        exec (main class for application)
+        iconFilename (path to icon image file)
+        menuGroup (the group to which the application shortcut belongs)
+        name (application name)</div>
+<p><b>Declared Attributes</b></p>
+<ul><li><tt>#REQUIRED ENUMERATION ( classpathJars | command | displayResourceType | displayResourceUrlName | exec | iconFilename | menuGroup | name ) property</tt></li>
+</ul>
+<p><b>Element Content Model</b></p>
+<p><tt>(<a href="#string">string</a>)</tt></p>
+<p><b>Referenced by</b></p>
+<p><tt><a href="#object">object</a></tt></p>
+
+
+<hr />
+<h2><a name="string"></a>string</h2>
+<div>string holds the value of the property of the object to be de-serialized by the XML decoder</div>
+<p><b>Element Content Model</b></p>
+<p><tt>(#PCDATA)*</tt></p>
+<p><b>Referenced by</b></p>
+<p><tt><a href="#void">void</a></tt></p>
+</body></html>
