@@ -1,20 +1,4 @@
 /*
- * License Notice
- *
- * This file is part of Plethora.
- *
- * Plethora is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; version 2 of the License.
- *
- * Plethora is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with Plethora; if not, write to the Free Software
- *
  * The original code is Plethora. The initial developer of the original
  * code is the Plethora Group at The American University in Cairo.
  *
@@ -41,7 +25,7 @@ import org.netbeans.modules.plethora.resources.Bundle;
 import org.openide.text.IndentEngine;
 
 /**
- * Transformer from XML to Java code. It’s responsible for injecting
+ * Transformer from XML to Java code. It's responsible for injecting
  * the generated code snippets into the java editor
  *
  * @see Lg3dDataObject
